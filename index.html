@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>fps-game</title>
+</head>
+
+<body>
+  <div id="app"></div>
+  <div id="crosshair"></div>
+  <div id="hit-marker"></div>
+
+  <div id="ui-layer">
+    <div id="score-container" class="hud-panel">
+      <div id="score-label">COMBAT SCORE</div>
+      <div id="score">0</div>
+    </div>
+
+    <div class="hud-bottom">
+      <div id="health-container" class="hud-panel">
+        <div class="label-small">
+          <span>INTEGRITY</span>
+          <span>100%</span>
+        </div>
+        <div id="health-bar-bg">
+          <div id="health-bar-fill"></div>
+        </div>
+      </div>
+
+      <div id="weapon-container" class="hud-panel">
+        <div class="label-small" style="justify-content: flex-end; color: var(--neon-pink);">PLASMA CHARGE</div>
+        <div id="ammo">∞</div>
+      </div>
+    </div>
+  </div>
+
+  <div id="start-screen">
+    <h1 class="glitch">NEON BLASTER</h1>
+    <div class="subtitle">SYSTEM INITIALIZATION REQUIRED</div>
+    <button id="start-btn" class="start-btn">ENGAGE SYSTEM</button>
+
+    <div class="controls-grid">
+      <div class="control-item"><span class="key">WASD</span> MOVEMENT</div>
+      <div class="control-item"><span class="key">MOUSE</span> AIMING</div>
+      <div class="control-item"><span class="key">LMB</span> FIRE WEAPON</div>
+      <div class="control-item"><span class="key">SPACE</span> THRUST JUMP</div>
+    </div>
+  </div>
+
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>
